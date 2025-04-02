@@ -1,0 +1,24 @@
+$accent-color: #1c62cd;
+$white-color: #ffffff;
+$accent-gray: #f0f0f4;
+$text-color: #2f3035;
+
+%img-style {
+  background-size: contain;
+  background-position: 0 0;
+}
+
+%sf-700 {
+  font-family: "SFProDisplay-Bold";
+  font-weight: 700;
+}
+
+%sf-500 {
+  font-family: "SFProDisplay-Medium";
+  font-weight: 500;
+}
+
+%sf-400 {
+  font-family: "SFProDisplay-Regular";
+  font-weight: 400;
+}
