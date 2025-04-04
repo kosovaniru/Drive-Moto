@@ -108,6 +108,11 @@
 }
 
 .top {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+  }
   &__slider {
     position: relative;
     max-width: 870px;
@@ -117,12 +122,14 @@
     position: absolute;
     z-index: 1;
     top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
     &--prev {
-      left: 15px;
+      left: 20px;
     }
     &--next {
-      right: 15px;
-      transform: rotate(180deg);
+      right: 20px;
+      transform: translateY(-50%) rotate(180deg);
     }
   }
   .slick-dots {
@@ -143,6 +150,48 @@
   }
   .slick-active {
     background-color: $white-color;
+  }
+}
+
+.sale-item {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  @extend %sf-700;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    padding: 8px 20px;
+    background-color: $accent-color;
+    color: $white-color;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  &__price {
+    display: inline-block;
+  }
+  &__price-new {
+    font-size: 27px;
+    color: $accent-color;
+  }
+  &__img {
+    margin: 0 auto;
+    margin-bottom: 4px;
+  }
+  &__name {
+    @extend %sf-700;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  &__bottom {
+    @extend %sf-400;
+    padding: 25px 12px;
+    background-color: $accent-gray;
+    font-size: 18px;
   }
 }
 
