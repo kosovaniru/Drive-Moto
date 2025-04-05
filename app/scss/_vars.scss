@@ -2,10 +2,12 @@ $accent-color: #1c62cd;
 $white-color: #ffffff;
 $accent-gray: #f0f0f4;
 $text-color: #2f3035;
+$light-grey: #c4c4c4;
 
 %img-style {
   background-size: contain;
   background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 %sf-700 {
@@ -21,4 +23,14 @@ $text-color: #2f3035;
 %sf-400 {
   font-family: "SFProDisplay-Regular";
   font-weight: 400;
+}
+
+%barlow-400 {
+  font-family: "Barlow-Regular";
+  font-weight: 400;
+}
+
+%barlow-700 {
+  font-family: "Barlow-Bold";
+  font-weight: 700;
 }

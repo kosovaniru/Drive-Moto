@@ -157,10 +157,14 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @extend %sf-700;
   &__top {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
   }
   &__info {
     padding: 8px 20px;
@@ -172,11 +176,28 @@
     display: inline-block;
   }
   &__price {
-    display: inline-block;
+    position: relative;
+    padding-right: 20px;
+    text-align: right;
   }
   &__price-new {
+    @extend %barlow-700;
     font-size: 27px;
+    line-height: 32px;
     color: $accent-color;
+    padding-bottom: 5px;
+  }
+  &__price-old {
+    @extend %barlow-400;
+    line-height: 17px;
+    @extend %sf-400;
+    font-size: 14px;
+    color: $light-grey;
+    background-image: url(../images/icons/line-old.svg);
+    @extend %img-style;
+    width: 60px;
+    padding: 0 5px;
+    display: inline-block;
   }
   &__img {
     margin: 0 auto;
@@ -192,6 +213,25 @@
     padding: 25px 12px;
     background-color: $accent-gray;
     font-size: 18px;
+    line-height: 21px;
+  }
+  &__date {
+    @extend %barlow-700;
+    font-size: 18px;
+    color: $accent-color;
+    display: block;
+  }
+}
+
+.search {
+  &__link {
+    font-weight: bold;
+  }
+  &__text {
+    display: none;
+  }
+  .active {
+    display: block;
   }
 }
 
