@@ -224,14 +224,113 @@
 }
 
 .search {
-  &__link {
-    font-weight: bold;
+  &__tabs {
+    display: flex;
+    gap: 34px;
+    margin-bottom: 25px;
   }
-  &__text {
+  &__item {
+    padding: 12px 26px;
+  }
+  &__link {
+    padding: 12px 26px;
+  }
+  .tabs__link--active {
+    border-radius: 5px;
+    background-color: $accent-gray;
+    font-weight: 700;
+  }
+  &__content-form {
+    display: flex;
+  }
+  &__content-item {
     display: none;
   }
-  .active {
+  .tabs__content-item--active {
     display: block;
+  }
+  &__content-input {
+    max-width: 1025px;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: $accent-gray;
+    @extend %sf-400;
+    font-size: 16px;
+    color: #656464;
+    border-radius: 3px;
+    border: none;
+  }
+  &__content-btn {
+    @extend %barlow-700;
+    padding: 15px 35px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color: $white-color;
+    background-color: $accent-color;
+    text-transform: uppercase;
+    height: 100%;
+  }
+}
+
+.products {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    padding: 20px 5px 16px 20px;
+    max-width: 370px;
+    width: 100%;
+    border: 1px solid $border-gray;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    transition: box-shadow 0.3s, color 0.3s;
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: 3px 3px 20px 0 rgba(50, 50, 50, 0.25);
+        .products__name {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    width: 100%;
+  }
+  &__name {
+    @extend %barlow-700;
+    font-size: 23px;
+  }
+  &__detail {
+    @extend %sf-400;
+    color: $light-grey;
+    width: fit-content;
+    font-size: 14px;
+    position: relative;
+    padding-right: 10px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/arrow-right.svg);
+      @extend %img-style;
+      width: 6px;
+      height: 9px;
+      right: 0px;
+      top: 9px;
+    }
+  }
+  &__img {
+    @extend %img-style;
+    margin: 0 auto;
   }
 }
 

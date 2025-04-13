@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +83,7 @@
   </header>
 
   <main class="main">
-    <section class="top">
+    <section class="top section">
       <div class="container">
         <div class="top__inner">
           <ul class="top__slider">
@@ -143,40 +143,102 @@
       </div>
     </section>
 
-    <section class="search">
+    <section class="search section">
       <div class="container">
         <div class="search__inner">
-          <ul class="search__tabs">
-            <li class="search__item">
-              <a class="search__link" href="#tab-1">Пошук за номером</a>
-              <form action="#" class="search__form">
-                <input class="search__input" type="text">
-                
-              </form>
+          <ul class="search__tabs tabs">
+            <li class="search__item tabs__item">
+              <a class="tabs__link search__link tabs__link--active" href="#tab-1">Пошук за номером</a>
             </li>
-            <li class="search__item">
-              <a class="search__link" href="#tab-2">Пошук за брендом</a>
-              <p class="search__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate sit, nobis beatae maxime, nesciunt at itaque quam modi praesentium ducimus quidem numquam accusamus officiis molestiae rem placeat dolores debitis illo!
-                Libero quae, commodi repellat magni, perspiciatis assumenda harum repudiandae totam delectus consectetur dicta sapiente ducimus deleniti tenetur velit tempora quos vitae iure inventore quasi earum reprehenderit. Harum rem dolorum ex?
-                Recusandae reprehenderit dolorum delectus ea tenetur alias tempora quod similique, quas iure fugiat illo repudiandae nobis distinctio in! Atque magnam quos unde asperiores ea incidunt, non praesentium aperiam sint mollitia?</p>
+            <li class="search__item tabs__item">
+              <a class="tabs__link search__link" href="#tab-2">Пошук за брендом</a>
             </li>
-            <li class="search__item">
-              <a class="search__link" href="#tab-3">Пошук за назвою товару</a>
-              <p class="search__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptates quos sint distinctio, adipisci impedit dolore voluptate maxime tempore qui quo deserunt, quam inventore earum molestias. Distinctio architecto quisquam maxime.</p>
+            <li class="search__item tabs__item">
+              <a class="tabs__link search__link" href="#tab-3">Пошук за назвою товару</a>
             </li>
           </ul>
-          <!-- <ul class="search__content">
-            <li class="search__content-item" id="tab-1">
-              
+          <ul class="search__content tabs">
+            <li class="tabs__content-item search__content-item tabs__content-item--active" id="tab-1">
+              <form action="#" class="search__content-form">
+                <input type="text" class="search__content-input" placeholder="Введіть номер">
+                <button class="search__content-btn" type="submit">Знайти</button>
+              </form>
             </li>
-            <li class="search__content-item" id="tab-2">
-              
+            <li class="tabs__content-item search__content-item" id="tab-2">
+              <form action="#" class="search__content-form">
+                <input type="text" class="search__content-input" placeholder="Введіть назву бренду">
+                <button class="search__content-btn" type="submit">Знайти</button>
+              </form>
             </li>
-            <li class="search__content-item" id="tab-3">
-              
+            <li class="tabs__content-item search__content-item" id="tab-3">
+              <form action="#" class="search__content-form">
+                <input type="text" class="search__content-input" placeholder="Введіть назву товару">
+                <button class="search__content-btn" type="submit">Знайти</button>
+              </form>
             </li>
-          </ul> -->
+          </ul>
         </div>
+      </div>
+    </section>
+
+    <section class="products section">
+      <div class="container">
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Квадроцикли</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-1.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Гідроцикли</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-2.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Катери</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-3.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Снігоходи</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-4.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Всюдиходи</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-5.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+          <li class="products__item">
+            <a class="products__link" href="#">
+              <div class="products__content">
+                <h3 class="products__name">Двигуни</h3>
+                <a class="products__detail" href="#">Детальніше</a>
+              </div>
+              <img class="products__img" src="images/products/product-5.png" alt="Фото квадроцикла">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

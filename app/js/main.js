@@ -5,7 +5,11 @@ $(function() {
     prevArrow: '<button class="top__btn top__btn--prev"><img class="top__btn-img" src="images/icons/arrow.svg" alt="Стрілка слайдера наліво"></button>',
     nextArrow: '<button class="top__btn top__btn--next"><img class="top__btn-img" src="images/icons/arrow.svg" alt="Стрілка слайдера направо"></button>'
   })
-  $(".search__link").on("click", function() {
-    $(".search__text").toggleClass("active")
+  $(".tabs__link").on("click", function(e) {
+    e.preventDefault();
+    $('.tabs__link').removeClass("tabs__link--active");
+    $('.tabs__content-item').removeClass("tabs__content-item--active");
+    $(this).addClass("tabs__link--active");
+    $($(this).attr('href')).addClass("tabs__content-item--active")
   })
 })
