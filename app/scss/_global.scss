@@ -26,3 +26,9 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.section-title {
+  @extend %barlow-700;
+  font-size: 25px;
+  margin-bottom: 9px;
+}

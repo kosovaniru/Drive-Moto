@@ -334,4 +334,105 @@
   }
 }
 
+.offerings {
+  &__tabs {
+    display: flex;
+    gap: 50px;
+    @extend %sf-400;
+    text-transform: lowercase;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  &__tab {
+    padding: 10px 0;
+  }
+  .tabs__link--active {
+    @extend %sf-500;
+    padding: 10px 0;
+    border-bottom: 2px solid $accent-color;
+  }
+  &__content {
+    margin-bottom: 35px;
+  }
+  .tabs__content-item {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+  &__btn {
+    padding: 17px 43px 15px;
+    @extend %sf-400;
+    background-color: $accent-gray;
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.offering-card {
+  max-width: 271px;
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  height: 403px;
+  padding: 30px 23px;
+  position: relative;
+  transition: box-shadow 0.3s, color 0.3s;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    @extend %img-style;
+  }
+  &::before {
+    background-image: url(../images/icons/heart.svg);
+    right: 19px;
+    top: 16px;
+    width: 24px;
+    height: 22px;
+  }
+  &::after {
+    background-image: url(../images/icons/cart-icon.svg);
+    width: 60px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px 0 0 0;
+    padding: 10px 16px 7px 14px;
+    background-color: $accent-color;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      box-shadow: 3px 3px 20px 0 rgba(50, 50, 50, 0.25);
+      color: $accent-color;
+    }
+  }
+  &__link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__img {
+    @extend %img-style;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  &__name {
+    @extend %sf-400;
+    font-size: 18px;
+    max-width: 230px;
+    width: 100%;
+  }
+  &__price {
+    @extend %barlow-700;
+    font-size: 30px;
+  }
+}
+
 @import "media";

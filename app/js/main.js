@@ -12,4 +12,8 @@ $(function() {
     $(this).addClass("tabs__link--active");
     $($(this).attr('href')).addClass("tabs__content-item--active")
   })
+  $(".item-slider").slick({
+    arrows: true,
+    slidesToShow: 4,
+  })
 })
