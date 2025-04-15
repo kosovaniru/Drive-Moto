@@ -381,29 +381,6 @@
   padding: 30px 23px;
   position: relative;
   transition: box-shadow 0.3s, color 0.3s;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    @extend %img-style;
-  }
-  &::before {
-    background-image: url(../images/icons/heart.svg);
-    right: 19px;
-    top: 16px;
-    width: 24px;
-    height: 22px;
-  }
-  &::after {
-    background-image: url(../images/icons/cart-icon.svg);
-    width: 60px;
-    height: 40px;
-    right: 0;
-    bottom: 0;
-    border-radius: 10px 0 0 0;
-    padding: 10px 16px 7px 14px;
-    background-color: $accent-color;
-  }
   @media (any-hover: hover) {
     &:hover {
       box-shadow: 3px 3px 20px 0 rgba(50, 50, 50, 0.25);
@@ -417,6 +394,38 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+  }
+  &__favorite,
+  &__btn {
+    content: "";
+    position: absolute;
+    @extend %img-style;
+  }
+  &__favorite {
+    right: 19px;
+    top: 16px;
+    width: 24px;
+    height: 22px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-image: url(../images/icons/heart.svg);
+      width: 24px;
+      height: 22px;
+    }
+    &--active::before {
+      background-image: url(../images/icons/heart-like.svg);
+    }
+  }
+  &__btn {
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px 0 0 0;
+    padding: 10px 16px 7px 14px;
+    background-color: $accent-color;
   }
   &__img {
     @extend %img-style;

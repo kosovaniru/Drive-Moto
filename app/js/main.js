@@ -12,6 +12,11 @@ $(function() {
     $(this).addClass("tabs__link--active");
     $($(this).attr('href')).addClass("tabs__content-item--active")
   })
+
+  $('.offering-card__favorite').on('click', function() {
+    $('.offering-card__favorite').toggleClass('offering-card__favorite--active')
+  }),
+
   $(".item-slider").slick({
     arrows: true,
     slidesToShow: 4,
