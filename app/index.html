@@ -147,8 +147,8 @@
       <div class="container">
         <div class="search__inner">
           <ul class="search__tabs tabs">
-            <li class="search__item tabs__item">
-              <a class="tabs__link search__link tabs__link--active" href="#tab-1">Пошук за номером</a>
+            <li class="search__item tabs__item tabs__item--active">
+              <a class="tabs__link search__link" href="#tab-1">Пошук за номером</a>
             </li>
             <li class="search__item tabs__item">
               <a class="tabs__link search__link" href="#tab-2">Пошук за брендом</a>
@@ -244,116 +244,357 @@
 
     <section class="offerings section">
       <div class="container">
-        <div class="offerings__inner">
+        <div class="offerings__inner tabs-form">
           <h2 class="section-title">Популярні товари</h2>
-          <ul class="offerings__tabs tabs">
-            <li class="offerings__tab">
-              <a class="offerings__lin tabs__link tabs__link--active" href="#slider-1">Запчастини</a>
+          <ul class="offerings__tabs tabs-form__tabs tabs">
+            <li class="tabs-form__tab tabs__item tabs__item--active">
+              <a class="tabs-form__link tabs__link" href="#slider-1">Запчастини</a>
             </li>
-            <li class="offerings__tab">
-              <a class="offerings__link tabs__link" href="#slider-2">Двигуни</a>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#slider-2">Двигуни</a>
             </li>
-            <li class="offerings__tab">
-              <a class="offerings__link tabs__link" href="#slider-3">Шини</a>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#slider-3">Шини</a>
             </li>
-            <li class="offerings__tab">
-              <a class="offerings__link tabs__link" href="#slider-4">Електроніка</a>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#slider-4">Електроніка</a>
             </li>
-            <li class="offerings__tab">
-              <a class="offerings__link tabs__link" href="#slider-5">Інструменти</a>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#slider-5">Інструменти</a>
             </li>
-            <li class="offerings__tab">
-              <a class="offerings__link tabs__link" href="#slider-6">Запчастини</a>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#slider-6">Запчастини</a>
             </li>
           </ul>
-          <ul class="offerings__content tabs">
-            <li class="offerings__content-tab tabs__content-item tabs__content-item--active" id="slider-1">
-              <ul class="item-slider offerings__content-slider">
-                <li class="item-slider__slide offerings__content-slide">
+          <ul class="tabs-form__content tabs">
+            <li class="tabs-form__content-tab tabs__content-item tabs__content-item--active" id="slider-1">
+              <ul class="item-slider tabs-form__content-slider">
+                <li class="item-slider__slide tabs-form__content-slide">
                   <article class="offering-card">
                     <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
                     <a class="offering-card__link" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
                       <img class="offering-card__img" src="images/content/slider-1.png" alt="">
                       <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
                       <span class="offering-card__price">9 800</span>
-                      <button class="offering-card__btn">
-                        <img src="images/icons/cart-icon.svg" alt="">
-                      </button>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
                     </a>
                   </article>
                 </li>
                 <li class="item-slider__slide">
                   <article class="offering-card">
-                    <a class="offering-card__link" href="#">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
                       <img class="offering-card__img" src="images/content/slider-1.png" alt="">
                       <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
                       <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
                     </a>
                   </article>
                 </li>
                 <li class="item-slider__slide">
                   <article class="offering-card">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
                     <a class="offering-card__link" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
                       <img class="offering-card__img" src="images/content/slider-1.png" alt="">
                       <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
                       <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
                     </a>
                   </article>
                 </li>
                 <li class="item-slider__slide">
-                  <article class="offering-card">
-                    <a class="offering-card__link" href="#">
+                  <article class="offering-card offering-card--not-available">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
                       <img class="offering-card__img" src="images/content/slider-1.png" alt="">
                       <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
                       <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
                     </a>
                   </article>
                 </li>
                 <li class="item-slider__slide">
-                  <article class="offering-card">
-                    <a class="offering-card__link" href="#">
+                  <article class="offering-card offering-card--not-available">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
                       <img class="offering-card__img" src="images/content/slider-1.png" alt="">
                       <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
                       <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
                     </a>
                   </article>
                 </li>
               </ul>
             </li>
-            <li class="offerings__content-tab tabs__content-item" id="slider-2">
-              <ul class="offerings__content-slider">
+            <li class="tabs-form__content-tab tabs__content-item" id="slider-2">
+              <ul class="tabs-form__content-slider">
                 ooooooooo
               </ul>
             </li>
-            <li class="offerings__content-tab tabs__content-item" id="slider-3">
-              <ul class="offerings__content-slider">
+            <li class="tabs-form__content-tab tabs__content-item" id="slider-3">
+              <ul class="tabs-form__content-slider">
                 rrrrrrrrrr
               </ul>
             </li>
-            <li class="offerings__content-tab tabs__content-item" id="slider-4">
-              <ul class="offerings__content-slider">
+            <li class="tabs-form__content-tab tabs__content-item" id="slider-4">
+              <ul class="tabs-form__content-slider">
                 uuuuuuuuuuuuuu
               </ul>
             </li>
-            <li class="offerings__content-tab tabs__content-item" id="slider-5">
-              <ul class="offerings__content-slider">
+            <li class="tabs-form__content-tab tabs__content-item" id="slider-5">
+              <ul class="tabs-form__content-slider">
                 nnnnnnnnnnnnn
               </ul>
             </li>
-            <li class="offerings__content-tab tabs__content-item" id="slider-6">
-              <ul class="offerings__content-slider">
+            <li class="tabs-form__content-tab tabs__content-item" id="slider-6">
+              <ul class="tabs-form__content-slider">
                 fffffffffffffffff
               </ul>
             </li>
           </ul>
-          <button class="offerings__btn">Показати ще</button>
+          <button class="offerings__btn">
+            <a class="offerings__link" href="#">Показати ще</a>
+          </button>
         </div>
+      </div>
+    </section>
+
+    <div class="banner section">
+      <div class="container">
+        <a href="#" class="banner__link">
+          <img class="banner__img" src="images/banner/banner.jpg" alt="">
+        </a>
+      </div>
+    </div>
+
+    <section class="product-popular">
+      <div class="container tabs-form ">
+        <h2 class="section-title">З цим товаром ще купують</h2>
+          <ul class="tabs-form__tabs tabs">
+            <li class="tabs-form__tab tabs__item tabs__item--active">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-1">Запчастини</a>
+            </li>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-2">Двигуни</a>
+            </li>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-3">Шини</a>
+            </li>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-4">Електроніка</a>
+            </li>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-5">Інструменти</a>
+            </li>
+            <li class="tabs-form__tab tabs__item">
+              <a class="tabs-form__link tabs__link" href="#popular-products__slider-6">Запчастини</a>
+            </li>
+          </ul>
+          <ul class="tabs-form__content tabs">
+            <li class="tabs-form__content-tab tabs__content-item tabs__content-item--active" id="popular-products__slider-1">
+              <ul class="item-slider tabs-form__content-slider">
+                <li class="item-slider__slide tabs-form__content-slide">
+                  <article class="offering-card">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
+                      <img class="offering-card__img" src="images/content/slider-1.png" alt="">
+                      <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
+                      <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
+                    </a>
+                  </article>
+                </li>
+                <li class="item-slider__slide">
+                  <article class="offering-card">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
+                      <img class="offering-card__img" src="images/content/slider-1.png" alt="">
+                      <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
+                      <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
+                    </a>
+                  </article>
+                </li>
+                <li class="item-slider__slide">
+                  <article class="offering-card">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
+                      <img class="offering-card__img" src="images/content/slider-1.png" alt="">
+                      <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
+                      <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
+                    </a>
+                  </article>
+                </li>
+                <li class="item-slider__slide">
+                  <article class="offering-card offering-card--not-available">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
+                      <img class="offering-card__img" src="images/content/slider-1.png" alt="">
+                      <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
+                      <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
+                    </a>
+                  </article>
+                </li>
+                <li class="item-slider__slide">
+                  <article class="offering-card offering-card--not-available">
+                    <button class="offering-card__favorite"></button>
+                    <button class="offering-card__btn"></button>
+                    <a class="offering-card__notify-link" href="#">
+                      <span class="offering-card__notify-span">Повідомити про наявність</span>
+                    </a>
+                    <a class="offering-card__link offering-card__link--sale" href="#">
+                      <p class="offering-card__hover-text">Подивитись товар</p>
+                      <img class="offering-card__img" src="images/content/slider-1.png" alt="">
+                      <h4 class="offering-card__name">Водонепроникний Рюкзак</h4>
+                      <span class="offering-card__price">9 800</span>
+                      <p class="offering-card__notify-text">Немає в наявності</p>
+                    </a>
+                  </article>
+                </li>
+              </ul>
+            </li>
+            <li class="tabs-form__content-tab tabs__content-item" id="popular-products__slider-2">
+              <ul class="tabs-form__content-slider">
+                ooooooooo
+              </ul>
+            </li>
+            <li class="tabs-form__content-tab tabs__content-item" id="popular-products__slider-3">
+              <ul class="tabs-form__content-slider">
+                rrrrrrrrrr
+              </ul>
+            </li>
+            <li class="tabs-form__content-tab tabs__content-item" id="popular-products__slider--4">
+              <ul class="tabs-form__content-slider">
+                uuuuuuuuuuuuuu
+              </ul>
+            </li>
+            <li class="tabs-form__content-tab tabs__content-item" id="popular-products__slider-5">
+              <ul class="tabs-form__content-slider">
+                nnnnnnnnnnnnn
+              </ul>
+            </li>
+            <li class="tabs-form__content-tab tabs__content-item" id="popular-products__slider-6">
+              <ul class="tabs-form__content-slider">
+                fffffffffffffffff
+              </ul>
+            </li>
+          </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__info">
+          <h4 class="footer__title">
+            Підпишіться на нашу розсилку та дізнавайтеся про акцію швидше
+          </h4>
+          <form class="footer__form" action="#">
+            <input class="footer__input" placeholder="Введіть свій e-mail" type="email">
+            <button class="footer__btn" type="submit">Відправити</button>
+          </form>
+        </div>
+        <div class="footer__box">
+          <div class="footer__wrapper">
+            <h5 class="footer__item-title">Інформація</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Про компанію</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакти</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Акції</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Магазини</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrapper">
+            <h5 class="footer__item-title">Інтернет-магазин</h5>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Доставка та самовивіз</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Оплата</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Поверння-обмін</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Новини</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="footer__social-media">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--inst"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--facebook"></a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <a class="footer__bottom-link" href="#">Договір оферти</a>
+        <a class="footer__bottom-link" href="#">Політика опрацювання персональних даних</a>
+      </div>
+    </div>
   </footer>
   <script src="js/main.min.js"></script>
 </body>
