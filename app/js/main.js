@@ -24,4 +24,15 @@ $(function() {
     prevArrow: '<button class="item-slider__btn item-slider__btn--prev"><img src="images/icons/item-arrow.svg" alt="" class="item-slider__arrow item-slider__arrow--prev"></button>',
     nextArrow: '<button class="item-slider__btn item-slider__btn--next"><img src="images/icons/item-arrow.svg" alt="" class="item-slider__arrow item-slider__arrow--next"></button>'
   })
+
+  $('.catalog__filter-btnform').on('click', function() {
+    $('.catalog__filter-btnform').removeClass('catalog__filter-btngrid--active', 'catalog__filter-btnline--active')
+    $('.tabs-form__content-slider').removeClass('tabs-form__content-slider--btngrid-active tabs-form__content-slider--btnline-active');
+    if ($(this).hasClass('catalog__filter-btngrid')) {
+      $('.tabs-form__content-slider').toggleClass('tabs-form__content-slider--btngrid-active')
+    } else {
+      $(this).addClass('catalog__filter-btnline--active')
+      $('.tabs-form__content-slider').toggleClass('tabs-form__content-slider--btnline-active')
+    }
+  })
 })
