@@ -415,7 +415,8 @@
         color: $accent-color;
       }
       .offering-card__hover-text {
-        transform: translateY(82px);
+        top: 100px;
+        display: block;
       }
     }
   }
@@ -487,9 +488,8 @@
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     padding: 18px 21px;
     position: absolute;
-    transform: translateY(-200%);
+    display: none;
     background-color: rgba($white-color, 0.9);
-    transition: transform 0.5s;
   }
   &__img {
     @extend %img-style;
@@ -728,12 +728,85 @@
     border-radius: 3px;
   }
 
-  .tabs-form__content-slider {
+  &__inner {
+    display: flex;
+  }
+
+  &__inner-aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  &__aside {
+    display: flex;
+    gap: 42px;
+  }
+
+  &__aside-btn {
+    &--active {
+      @extend %sf-700;
+      font-size: 16px;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding-bottom: 7px;
+      position: relative;
+      margin-bottom: 48px;
+      &::before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid $accent-color;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__aside-option:not(:last-of-type) {
+    margin-bottom: 41px;
+  }
+
+  &__aside-title {
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 26px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/icons/arrow-right.svg);
+      width: 12px;
+      height: 8px;
+      left: 0;
+      top: 10px;
+      transform: rotate(90deg);
+      @extend %img-style;
+    }
+    &--not-active::before {
+      transform: rotate(270deg);
+      top: 5px;
+    }
+  }
+
+  &__aside-box--not-active {
+    display: none;
+  }
+
+  &__inner-content {
+    width: 100%;
+  }
+
+  &__inner-list {
     &--btngrid-active {
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3, auto);
-      grid-column-gap: 20px;
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
     }
 
     &--btnline-active {
