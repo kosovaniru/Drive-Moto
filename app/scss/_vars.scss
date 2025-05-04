@@ -35,3 +35,10 @@ $border-gray: #cdcdcd;
   font-family: "Barlow-Bold";
   font-weight: 700;
 }
+
+$breakpoints: (
+  "desktop": 1230px,
+  "tablet-2": 992px,
+  "tablet": 768px,
+  "phone": 560px,
+);
